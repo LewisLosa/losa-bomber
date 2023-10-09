@@ -115,7 +115,6 @@ while 1:
                             break
                         exec("sms."+attribute+"()")
 
-    threads = []
     for i in tel_liste:
         thread1 = threading.Thread(target=sms_gonder, args=(i, mail, kere, aralik))
         thread2 = threading.Thread(target=sms_gonder, args=(i, mail, kere, aralik))
@@ -133,8 +132,7 @@ while 1:
         thread3.start()
         thread2.start()
         thread1.start()
-        for thread in threads:
-            thread.join()
+        sleep(0.4)
         sms = SendSms(i, mail)
         if isinstance(kere, int):
                 while sms.adet < kere:
