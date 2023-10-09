@@ -12,7 +12,7 @@ class SendSms():
         if len(mail) != 0:
             self.mail = mail
         else:
-            self.mail = ''.join(choice(ascii_lowercase) for i in range(19))+"@gmail.com"
+            self.mail = ''.join(choice(asciitest_lowercase) for i in range(19))+"@gmail.com"
         
      
     #wmf.com.tr
