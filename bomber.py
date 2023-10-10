@@ -7,20 +7,6 @@ import threading
 
 def Bomber():
     while 1:
-        system("cls||clear")
-        print("""{}
-    __                                   
-   / /___  _________ _                   
-  / / __ \/ ___/ __ `/         Kodlar          
- / / /_/ (__  ) /_/ /          Hazırlanıyor...          
-/_/\____/____/\__,_/      __             
-   / /_  ____  ____ ___  / /_  ___  _____
-  / __ \/ __ \/ __ `__ \/ __ \/ _ \/ ___/
- / /_/ / /_/ / / / / / / /_/ /  __/ /    
-/_.___/\____/_/ /_/ /_/_.___/\___/_/                                                                     
-by @losa.dev """.format(Fore.LIGHTRED_EX))
-        sleep(2)
-        system("cls||clear")
         print(Style.RESET_ALL +Fore.LIGHTRED_EX + Back.LIGHTYELLOW_EX + "\nİpucu: Birden fazla girmek için ENTER tuşunu kullanın.")
         print(Style.RESET_ALL + "+90 ile başlayan telefon numarası giriniz: ",end="")
         telefon_no = input()
